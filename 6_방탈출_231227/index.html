@@ -73,7 +73,9 @@
         break;
       case '16':
         window.location.href = 'fileB.html'; // Replace with the actual file path
-        break;
+        break
+        timed(1)
+        
       case '1000':
         window.location.href = 'fileC.html'; // Replace with the actual file path
         break;
@@ -84,6 +86,12 @@
         // Do nothing for other keywords
         break;
     }
+  }
+  function resetwindow() {
+    window.location.href = 'index.html';
+  }
+  function timed(sec) {
+    setTimeout(resetwindow(), sec/10);
   }
 </script>
 
